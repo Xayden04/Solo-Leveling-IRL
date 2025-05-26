@@ -1,0 +1,82 @@
+
+body {
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.intro {
+  background: linear-gradient(to right, #111122, #1f1f3f);
+  padding: 2em;
+  box-shadow: 0 0 30px #4f00ff;
+}
+
+.tracker {
+  margin: 2em auto;
+  width: 80%;
+  max-width: 600px;
+  background-color: #151515;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #4400ff;
+}
+
+form fieldset {
+  border: 1px solid #444;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 6px;
+}
+
+.avatar {
+  margin-top: 3em;
+}
+
+#avatar-img {
+  width: 200px;
+  height: auto;
+  margin-top: 1em;
+}
+
+button {
+  padding: 0.8em 1.5em;
+  background-color: #4f00ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6a00ff;
+}
+
+.notification {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(20, 20, 40, 0.95);
+  border: 2px solid #3f00ff;
+  padding: 20px 40px;
+  color: #00ccff;
+  font-size: 1.2em;
+  z-index: 9999;
+  box-shadow: 0 0 20px #3f00ff;
+  display: none;
+}
+
+.notification.show {
+  display: block;
+  animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translate(-50%, -20%); }
+  10% { opacity: 1; transform: translate(-50%, 0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%, -20%); }
+}

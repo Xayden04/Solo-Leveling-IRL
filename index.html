@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Shadow Training IRL - Hunter Awakening</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="intro">
+    <h1>Only I Level Up... IRL</h1>
+    <p>Bienvenue, <strong>Hunter</strong></p>
+  </div>
+
+  <section class="tracker">
+    <h2>Suivi IRL quotidien</h2>
+    <form id="daily-form">
+      <fieldset>
+        <legend>Entraînement (FOR)</legend>
+        <label><input type="checkbox" name="workout"> Séance de muscu / cardio</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Alimentation (INT)</legend>
+        <label><input type="checkbox" name="nutrition"> 3 repas + 2 collations</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Sommeil (END)</legend>
+        <label><input type="checkbox" name="sleep"> 7h30+ de sommeil</label>
+      </fieldset>
+
+      <button type="submit">Valider la journée</button>
+    </form>
+  </section>
+
+  <section class="avatar">
+    <h2>Évolution de Hunter</h2>
+    <p>Rang actuel : <span id="rank">E</span></p>
+    <img id="avatar-img" src="avatar_e.png" alt="Avatar de Hunter">
+  </section>
+
+  <div id="notification" class="notification hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
