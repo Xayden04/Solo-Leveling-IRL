@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Interface de Donjon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="portal" class="portal-screen">
+    <h1>Connexion au Donjon...</h1>
+  </div>
+
+  <div class="intro" style="display:none;">
+    <h1>Interface de Donjon</h1>
+    <p>Bienvenue, <strong id="hunter-name"></strong></p>
+    <button onclick="toggleAudio()">[Toggle OST]</button>
+  </div>
+
+  <section id="login-section">
+    <input type="text" id="name-input" placeholder="Nom de chasseur">
+    <button onclick="login()">Entrer</button>
+  </section>
+
+  <section id="dashboard" style="display:none;">
+    <h2>Statistiques</h2>
+    <p>Total XP : <span id="xp-total">0</span></p>
+    <div class="xp-bar"><div id="xp-progress"></div></div>
+    <p>FOR: <span id="xp-for">0</span> | INT: <span id="xp-int">0</span> | END: <span id="xp-end">0</span></p>
+    <div id="calendar-container"></div>
+    <div id="boss-section"></div>
+  </section>
+
+  <div id="notification" class="notification hidden"></div>
+
+  <audio id="bg-music" loop autoplay>
+    <source src="music.mp3" type="audio/mp3">
+  </audio>
+
+  <script src="app.js"></script>
+</body>
+</html>
