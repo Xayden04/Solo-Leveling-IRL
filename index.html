@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Interface de Donjon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="intro">
+    <h1>Interface de Donjon</h1>
+    <p>Bienvenue, <strong id="hunter-name"></strong></p>
+  </div>
+
+  <section id="login-section">
+    <h2>Connexion au Système</h2>
+    <input type="text" id="name-input" placeholder="Nom de chasseur">
+    <button onclick="login()">Entrer dans le Donjon</button>
+  </section>
+
+  <section id="dashboard" style="display:none;">
+    <h2>Shadow Training IRL</h2>
+    <p>Total XP : <span id="xp-total">0</span></p>
+    <div id="calendar-container"></div>
+    <div id="boss-section"></div>
+  </section>
+
+  <div id="notification" class="notification hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

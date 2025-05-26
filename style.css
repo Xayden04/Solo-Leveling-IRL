@@ -1,0 +1,51 @@
+
+body {
+  background: #0d0d0d;
+  color: #f0f0f0;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.intro {
+  background: #121225;
+  padding: 20px;
+  box-shadow: 0 0 30px #3f00ff;
+}
+#login-section input {
+  padding: 10px;
+  font-size: 1em;
+}
+#login-section button {
+  margin-top: 1em;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #3f00ff;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.notification {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(20, 20, 40, 0.95);
+  border: 2px solid #3f00ff;
+  padding: 20px 40px;
+  color: #00ccff;
+  font-size: 1.2em;
+  z-index: 9999;
+  box-shadow: 0 0 20px #3f00ff;
+  display: none;
+}
+.notification.show {
+  display: block;
+  animation: fadeInOut 3s forwards;
+}
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translate(-50%, -20%); }
+  10% { opacity: 1; transform: translate(-50%, 0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%, -20%); }
+}
