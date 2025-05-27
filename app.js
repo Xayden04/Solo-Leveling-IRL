@@ -1,0 +1,1 @@
+console.log('Shadow Training IRL V8.2 loaded');
